@@ -1,0 +1,57 @@
+Employees face difficulty accessing accurate, consolidated information on organizational policies, HR guidelines, and financial matters, leading to increased HR helpdesk workload and inconsistent responses. Manual handling delays resolution and affects employee satisfaction. There is a need for an AI-driven virtual assistant providing instant, context-aware answers, reducing HR operational overhead, and guiding employees through compliance training and certification paths to ensure adherence and engagement.
+
+Data Requirements:
+- HR and financial policy documents
+- FAQs and historical query logs
+- Compliance training content and certification criteria
+- Organizational structure and role definitions
+- Synthetic data supporting privacy compliance
+
+Expected Output/Demonstration:
+- An AI-powered employee assistant providing instant, personalized policy clarifications
+- Integration with compliance training platforms
+- Detailed documentation and test plans
+- Analytics suite for HR insights
+- Demonstrable reduction in helpdesk workload and improved employee experience metrics
+
+Suggested Solution
+Develop an AI-powered Employee Policy Assistant:
+A web and/or chat-based virtual assistant that uses AI (e.g., LLMs) to answer employees’ HR, policy, finance, and compliance questions instantly, based on internal documents, FAQs, and logs. The assistant should:
+
+1. Policy Query Engine:
+   - Natural language understanding to handle free-text questions.
+   - Ingest and index HR/finance policy docs, compliance training modules, FAQs, and logs.
+   - Document search (semantic, not just keyword), summarization, and citation for transparency.
+2. Compliance Training Integration:
+   - Recommend relevant compliance courses and certification paths.
+   - Track employee progress and guide through mandatory training.
+   - Send reminders or notifications for pending certifications.
+3. Organizational Role Awareness:
+   - Personalized answers based on user's role, department, or location.
+   - Integration with corporate directory/LDAP/HRMS for context enrichment.
+4. Helpdesk Automation:
+   - Automate resolution of common queries.
+   - Escalation workflow for ambiguous/unhandled cases.
+   - Provide analytics to HR on query categories, resolution times, and satisfaction scores.
+5. Privacy and Security:
+   - Synthetic data masking for sensitive cases.
+   - Compliance with internal privacy policies for handling user data.
+6. Demonstration & Analytics:
+   - Log all interactions for analysis.
+   - Dashboard for HR to monitor reduction in helpdesk queries, response quality, and employee satisfaction.
+
+Tech Stack Example:
+- Backend: Python (FastAPI or Flask), Node.js, or Java Spring Boot
+- Frontend: React, Angular, or an MS Teams/Slack chatbot
+- AI: OpenAI GPT-3/4, Azure OpenAI, or local LLM models (LangChain, GPT4All)
+- Data: ElasticSearch for document search, Postgres for structured logs/analytics
+- Authentication/SSO: Integration with corporate IAM
+- Training Compliance: Integration API with LMS or training management
+
+Next Steps:
+- Gather actual policy documents and training modules
+- Build initial data pipeline for ingestion and semantic indexing
+- Develop chatbot/web app interface
+- Integrate authentication and organizational mapping
+- Build analytics dashboard for HR
+- Test with synthetic and real employee queries, iterate
